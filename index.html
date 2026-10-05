@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Hrithika D — artist and painter creating portraits, traditional works, landscapes and mixed-media studies.">
+  <meta name="theme-color" content="#eeeadf">
+  <title>Hrithika D — Artist & Painter</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="topline"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Hrithika D home">HRITHIKA D</a>
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">Menu</button>
+    <nav class="nav" aria-label="Primary navigation">
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#commissions">Commissions</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Artist · Painter · Mixed Media</p>
+        <h1>Portraits.<br><em>Colour.</em><br>Character.</h1>
+        <p class="hero-text">A collection of portraits, paintings and mixed-media works exploring expression, culture, atmosphere and detail.</p>
+        <div class="hero-actions">
+          <a class="button" href="#work">View selected work</a>
+          <a class="quiet-link" href="#commissions">Commission a piece <span>↗</span></a>
+        </div>
+      </div>
+
+      <button class="hero-art lightbox-trigger" data-index="0" aria-label="Open featured artwork">
+        <span class="hero-number">01</span>
+        <img src="assets/artwork-01.jpg" alt="Featured traditional portrait with peacock">
+        <span class="art-label">Featured work · Portrait</span>
+      </button>
+    </section>
+
+    <section class="intro-strip">
+      <div class="intro-index">I</div>
+      <div>
+        <p class="eyebrow">The practice</p>
+        <p class="statement">Working across <strong>portraiture, traditional subjects, landscapes and mixed media</strong>, Hrithika D uses different materials to explore the character of a subject rather than force every idea into one style.</p>
+      </div>
+    </section>
+
+    <section id="work" class="work-section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">01 — Selected work</p>
+          <h2>A body of work</h2>
+        </div>
+        <p class="section-note">Thirteen works are currently represented. The collection can grow as finished pieces are added.</p>
+      </div>
+
+      <div class="filter-bar" role="tablist" aria-label="Filter artwork">
+        <button class="filter active" data-filter="all">All work</button>
+        <button class="filter" data-filter="portraits">Portraits</button>
+        <button class="filter" data-filter="cultural">Cultural</button>
+        <button class="filter" data-filter="landscapes">Landscapes</button>
+        <button class="filter" data-filter="charcoal">Charcoal</button>
+        <button class="filter" data-filter="experimental">Mixed media</button>
+      </div>
+
+      <div class="collection-grid">
+        <a class="collection-card collection-portrait" href="#gallery" data-jump="portraits">
+          <img src="assets/artwork-08.jpg" alt="Portrait artwork">
+          <div><span>Collection 01</span><h3>Portraits & Figures</h3><p>Expression, presence and character.</p></div>
+          <b>↗</b>
+        </a>
+        <a class="collection-card collection-cultural" href="#gallery" data-jump="cultural">
+          <img src="assets/artwork-13.jpg" alt="Watercolour cultural artwork">
+          <div><span>Collection 02</span><h3>Cultural & Devotional</h3><p>Traditional subjects through colour and form.</p></div>
+          <b>↗</b>
+        </a>
+        <a class="collection-card collection-landscape" href="#gallery" data-jump="landscapes">
+          <img src="assets/artwork-05.jpg" alt="Village landscape">
+          <div><span>Collection 03</span><h3>Landscapes & Places</h3><p>Atmosphere, light and everyday surroundings.</p></div>
+          <b>↗</b>
+        </a>
+      </div>
+
+      <div id="gallery" class="gallery">
+        <article class="art-card featured-card" data-category="portraits cultural" data-index="0">
+          <button class="card-image lightbox-trigger" data-index="0">
+            <img src="assets/artwork-01.jpg" alt="Peacock portrait">
+          </button>
+          <div class="card-meta"><span>01</span><div><h3>Peacock Portrait</h3><p>Acrylic · Portrait</p><small>Original work · Details on request</small></div></div>
+        </article>
+
+        <article class="art-card" data-category="portraits cultural" data-index="1">
+          <button class="card-image lightbox-trigger" data-index="1"><img src="assets/artwork-02.jpg" alt="Muruga portrait"></button>
+          <div class="card-meta"><span>02</span><div><h3>Muruga</h3><p>Acrylic · Portrait</p><small>Original work · Details on request</small></div></div>
+        </article>
+
+        <article class="art-card" data-category="portraits cultural" data-index="2">
+          <button class="card-image lightbox-trigger" data-index="2"><img src="assets/artwork-03.jpg" alt="Traditional portrait"></button>
+          <div class="card-meta"><span>03</span><div><h3>Traditional Portrait</h3><p>Acrylic · Portrait</p><small>Original work · Details on request</small></div></div>
+        </article>
+
+        <article class="art-card wide-card" data-category="landscapes" data-index="4">
+          <button class="card-image lightbox-trigger" data-index="4"><img src="assets/artwork-05.jpg" alt="Village at dusk"></button>
+          <div class="card-meta"><span>04</span><div><h3>Village at Dusk</h3><p>Mixed media · Landscape</p><small>Original work · Details on request</small></div></div>
+        </article>
+
+        <article class="art-card" data-category="landscapes" data-index="3">
+          <button class="card-image lightbox-trigger" data-index="3"><img src="assets/artwork-04.jpg" alt="Swan on water"></button>
+          <div class="card-meta"><span>05</span><div><h3>Swan</h3><p>Watercolour · Nature</p><small>Original work · Details on request</small></div></div>
+        </article>
+
+        <article class="art-card" data-category="landscapes experimental" data-index="5">
+          <button class="card-image lightbox-trigger" data-index="5"><img src="assets/artwork-06.jpg" alt="Expressive forest landscape"></button>
+          <div class="card-meta"><span>06</span><div><h3>Into the Green</h3><p>Mixed media · Landscape</p><small>Original work · Details on request</small></div></div>
+        </article>
+
+        <article class="art-card featured-card" data-category="charcoal cultural" data-index="6">
+          <button class="card-image lightbox-trigger" data-index="6"><img src="assets/artwork-07.jpg" alt="Charcoal Ganesha study"></button>
+          <div class="card-meta"><span>07</span><div><h3>Ganesha Study</h3><p>Charcoal · Study</p><small>Original work · Details on request</small></div></div>
+        </article>
+
+        <article class="art-card" data-category="charcoal portraits" data-index="7">
+          <button class="card-image lightbox-trigger" data-index="7"><img src="assets/artwork-08.jpg" alt="Monochrome portrait"></button>
+          <div class="card-meta"><span>08</span><div><h3>In Shadow</h3><p>acrylic · Portrait</p><small>Original work · Details on request</small></div></div>
+        </article>
+
+        <article class="art-card" data-category="experimental" data-index="8">
+          <button class="card-image lightbox-trigger" data-index="8"><img src="assets/artwork-09.jpg" alt="Expressive eye artwork"></button>
+          <div class="card-meta"><span>09</span><div><h3>The Eye</h3><p>Mixed media · Study</p><small>Original work · Details on request</small></div></div>
+        </article>
+
+        <article class="art-card wide-card" data-category="landscapes" data-index="10">
+          <button class="card-image lightbox-trigger" data-index="10"><img src="assets/artwork-11.jpg" alt="Street study"></button>
+          <div class="card-meta"><span>10</span><div><h3>Street Study</h3><p>colour pencils · Urban study</p><small>Original work · Details on request</small></div></div>
+        </article>
+
+        <article class="art-card" data-category="landscapes" data-index="9">
+          <button class="card-image lightbox-trigger" data-index="9"><img src="assets/artwork-10.jpg" alt="Village study"></button>
+          <div class="card-meta"><span>11</span><div><h3>Village Study</h3><p>colour pencils · Landscape</p><small>Original work · Details on request</small></div></div>
+        </article>
+
+        <article class="art-card" data-category="landscapes" data-index="11">
+          <button class="card-image lightbox-trigger" data-index="11"><img src="assets/artwork-12.jpg" alt="Village sketch"></button>
+          <div class="card-meta"><span>12</span><div><h3>Village Sketch</h3><p>Drawing · Study</p><small>Original work · Details on request</small></div></div>
+        </article>
+
+        <article class="art-card featured-card" data-category="cultural" data-index="12">
+          <button class="card-image lightbox-trigger" data-index="12"><img src="assets/artwork-13.jpg" alt="Ganesha in colour"></button>
+          <div class="card-meta"><span>13</span><div><h3>Ganesha in Colour</h3><p>Watercolour · Cultural</p><small>Original work · Details on request</small></div></div>
+        </article>
+      </div>
+
+      <p class="gallery-note">Artwork titles and technical details can be updated as the collection develops. No size or year has been invented here.</p>
+    </section>
+
+    <section id="about" class="about-section">
+      <div class="about-image">
+        <span class="vertical-note">HRITHIKA D · ARTIST</span>
+        <img src="assets/artistpic.jpg" alt="Charcoal Ganesha artwork">
+      </div>
+      <div class="about-copy">
+        <p class="eyebrow">02 — About the artist</p>
+        <h2>Looking closely.<br><em>Finding the character.</em></h2>
+        <p>I am Hrithika D, an artist and painter working across portraiture, painting and mixed media.</p>
+        <p>My work moves between detailed charcoal drawings, expressive acrylic and watercolour paintings, and traditional subjects inspired by culture and everyday surroundings.</p>
+        <p>I am interested in expression, detail, colour and atmosphere—and in letting each medium bring its own character to the work.</p>
+        <div class="practice-list">
+          <div><span>01</span><strong>Portraiture</strong></div>
+          <div><span>02</span><strong>Acrylic & Watercolour</strong></div>
+          <div><span>03</span><strong>Charcoal</strong></div>
+          <div><span>04</span><strong>Mixed Media</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="commissions" class="commission-section">
+      <div class="commission-intro">
+        <p class="eyebrow">03 — Commissions</p>
+        <h2>Turn a memory<br>into an original.</h2>
+        <p>Custom artwork can be created from your photographs, references or a personal idea. Each commission is discussed before the work begins.</p>
+      </div>
+      <div class="commission-process">
+        <div class="process-step"><span>01</span><div><h3>Tell me the idea</h3><p>Share the subject, preferred medium, reference images and what you have in mind.</p></div></div>
+        <div class="process-step"><span>02</span><div><h3>Confirm the artwork</h3><p>We discuss the composition, size, timeline and price before anything is started.</p></div></div>
+        <div class="process-step"><span>03</span><div><h3>Create & deliver</h3><p>The artwork is created and final delivery details are arranged.</p></div></div>
+        <a class="button" href="#contact">Request a commission</a>
+      </div>
+    </section>
+
+    <section class="availability">
+      <div><span>Currently open for</span><strong>Selected commissions & original artwork enquiries</strong></div>
+      <span>India · Online enquiries</span>
+    </section>
+
+    <section id="contact" class="contact-section">
+      <div class="contact-copy">
+        <p class="eyebrow">04 — Contact</p>
+        <h2>Let's make something personal.</h2>
+        <p>For commissions, artwork enquiries or collaborations, send a message with your idea and reference images if available.</p>
+        <div class="contact-links">
+          <a href="https://wa.me/917406064122" target="_blank" rel="noreferrer">Whatsapp ↗</a>
+          <a href="https://instagram.com/hrithika_hrithi_" target="_blank" rel="noreferrer">Instagram ↗</a>
+        </div>
+      </div>
+      <div class="contact-details">
+        <div class="detail-row"><span>Name</span><span class="detail-value">HRITHIKA D</span></div>
+        <a class="detail-row" href="tel:+917406064122"><span>Phone</span><span class="detail-value">+91 74060 64122</span></a>
+        <a class="detail-row" href="mailto:hrithikashekhar2005@gmail.com?subject=Artwork%20enquiry"><span>Email</span><span class="detail-value">hrithikashekhar2005@gmail.com</span></a>
+        <button class="button" type="button" id="prepareEmail">Prepare email</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-brand"><strong>HRITHIKA D</strong><span>Artist · Painter · Mixed Media</span></div>
+    <div class="footer-right"><span>© 2026</span><a href="#home">Back to top ↑</a></div>
+  </footer>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="close" aria-label="Close">×</button>
+    <button class="prev" aria-label="Previous artwork">←</button>
+    <figure><img id="lightboxImage" src="" alt=""><figcaption id="lightboxCaption"></figcaption></figure>
+    <button class="next" aria-label="Next artwork">→</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
