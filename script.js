@@ -109,7 +109,7 @@ document.querySelectorAll(".nav a").forEach(a => {
 // ==============================
 const RECIPIENT = "hrithikashekhar2005@gmail.com";
 const SUBJECT = "Artwork enquiry";
-const BODY = "Hello Hrithika,\nI am interested in your artwork. Please get back to me with the details.";
+const BODY = "Hello Hrithika,\nI am interested in your artwork.";
 
 document.getElementById("prepareEmail").addEventListener("click", () => {
   const enc = encodeURIComponent;
